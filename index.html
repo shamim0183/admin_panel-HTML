@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+
+    <!-- GOGGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap.min.css">
+
+    <!-- CUSTOME STYLE -->
+    <link rel="stylesheet" href="./assets/css/sass.css">
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+</head>
+<body>
+    <div class="main-wrapper">
+        <!-- ------- NAVBAR START --------- -->
+        <div class="header-container fixed-top">
+            <header class="header navbar navbar-expand-sm expand-header">
+                <div class="header-left d-flex">
+                    <div class="logo">
+                        Stamford
+                    </div>
+                    <a href="#" class="sidebarCollapse" id="toggleSidebar" data-placement="bottom">
+                        <span><i class="fas fa-bars    "></i></span>
+                    </a>
+                </div>
+                <ul class="navbar-item d-flex flex-row ms-auto">
+                    <li class="nav-item dropdown user-profile-dropdown">
+                        <a href="" class="nav-link user" id="Notify" data-bs-toggle="dropdown">
+                            <img src="./assets/img/bell.svg" alt="" class="img-fluid icon">
+                            <p class="count purple-gradient">5</p>
+                        </a>
+                        <div class="dropdown-menu menu">
+                            <div class="dp-main-menu ">
+                                <div class="dp-border">
+                                    <a href="" class="dropdown-item message-item">
+                                        <img src="./assets/img/server.svg" alt="" class="img-fluid user-note">
+                                    </a>
+                                    <div class="note-infor-dismiss ">
+                                        <a href="" class="user-notify-info">
+                                            <span class="note-name">Server Rebooted</span>
+                                            <span class="note-time">20 min ago</span>
+                                        </a>
+                                        <a href="" class="satus-link"><span class="fas fa-times"></span></a>
+                                    </div>
+                                </div>
+                                <div class="dp-border">
+                                    <a href="" class="dropdown-item message-item">
+                                        <img src="./assets/img/love.svg" alt="" class="img-fluid user-note">
+                                    </a>
+                                    <div class="note-infor-dismiss ">
+                                        <a href="" class="user-notify-info">
+                                            <span class="note-name">You Love Workd</span>
+                                            <span class="note-time">22 min ago</span>
+                                        </a>
+                                        <a href="" class="satus-link"><span class="fas fa-times"></span></a>
+                                    </div>
+                                </div>
+                                <div class="dp-border">
+                                    <a href="" class="dropdown-item message-item">
+                                        <img src="./assets/img/note.svg" alt="" class="img-fluid user-note">
+                                    </a>
+                                    <div class="note-infor-dismiss ">
+                                        <a href="" class="user-notify-info">
+                                            <span class="note-name">Mamun Sent a File</span>
+                                            <span class="note-time">25 min ago</span>
+                                        </a>
+                                        <a href="" class="satus-link"><span class="fas fa-times"></span></a>
+                                    </div>
+                                </div>
+                                <div class="dp-border">
+                                    <a href="" class="dropdown-item message-item">
+                                        <img src="./assets/img/error.svg" alt="" class="img-fluid user-note">
+                                    </a>
+                                    <div class="note-infor-dismiss ">
+                                        <a href="" class="user-notify-info">
+                                            <span class="note-name">Server Don't Work!</span>
+                                            <span class="note-time">30 min ago</span>
+                                        </a>
+                                        <a href="" class="satus-link"><span class="fas fa-times"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown user-profile-dropdown">
+                        <a href="" class="nav-link user" id="Notify" data-bs-toggle="dropdown">
+                            <img src="./assets/img/message.svg" alt="" class="img-fluid icon">
+                            <p class="count bg-clc">5</p>
+                        </a>
+                        <div class="dropdown-menu menu">
+                            <div class="dp-main-menu ">
+                                <div class="dp-border">
+                                    <a href="" class="dropdown-item message-item">
+                                        <img src="./assets/img/profile2.jpg" alt="" class="img-fluid sms-user">
+                                    </a>
+                                    <div class="note-infor-dismiss ">
+                                        <div  class="user-message-info">
+                                            <p class="m-user-name">Shamim Hossain</p>
+                                            <p class="user-role">Super Admin</p>
+                                        </div>                                     
+                                    </div>
+                                </div>                       
+                                <div class="dp-border">
+                                    <a href="" class="dropdown-item message-item">
+                                        <img src="./assets/img/profile3.jpg" alt="" class="img-fluid sms-user">
+                                    </a>
+                                    <div class="note-infor-dismiss ">
+                                        <div  class="user-message-info">
+                                            <p class="m-user-name">Amar Tanvee</p>
+                                            <p class="user-role">Co Admin</p>
+                                        </div>                                     
+                                    </div>
+                                   
+                                </div>                       
+                                <div class="dp-border">
+                                    <a href="" class="dropdown-item message-item">
+                                        <img src="./assets/img/profile.jpg" alt="" class="img-fluid sms-user">
+                                    </a>
+                                    <div class="note-infor-dismiss ">
+                                        <div  class="user-message-info">
+                                            <p class="m-user-name">Abdus Salam</p>
+                                            <p class="user-role">Admin</p>
+                                        </div>                                     
+                                    </div>                                
+                                </div>                       
+                            </div>
+                           
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown user-profile-dropdown">
+                        <a href="" class="nav-link user" id="Notify" data-bs-toggle="dropdown">
+                            <img src="./assets/img/user.svg" alt="" class="img-fluid icon">
+                            <p class="count">5</p>
+                        </a>
+                        <div class="dropdown-menu menu">
+                            <div class="user-profile-section">
+                                <div class="media mx-auto">
+                                    <img src="./assets/img/user.svg" alt="" class="img-fluid me-2 user-img">
+                                    <div class="media-boy ">
+                                        <div  class="user-message-info">
+                                            <h5>Shamim Hossain</h5>
+                                            <p >Super Admin</p>
+                                        </div>                                     
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="dp-main-menu">
+                                <div class="dp-border">
+                                    <a href="" class="dropdown-item"><span class="fas fa-user"></span>Profile</a>
+                                </div>
+                                <div class="dp-border">
+                                    <a href="" class="dropdown-item"><span class="fas fa-inbox"></span>Inbox</a>
+                                </div>
+                                <div class="dp-border">
+                                    <a href="" class="dropdown-item"><span class="fas fa-lock-open"></span>Lock screen</a>
+                                </div>
+                                <div class="dp-border">
+                                    <a href="" class="dropdown-item"><span class="fas fa-outdent"></span>Log Out</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown user-profile-dropdown">
+                        <a href="" class="nav-link user" id="Notify" data-bs-toggle="dropdown">
+                            <img src="./assets/img/setting.svg" alt="" class="img-fluid icon">
+                            <p class="count">5</p>
+                        </a>
+                        <div class="dropdown-menu menu">
+                            <div class="dp-main-menu">
+                                <div class="dp-border">
+                                    <a href="" class="dropdown-item"><span class="fas fa-plug"></span>Parmition</a>
+                                </div>
+                                <div class="dp-border">
+                                    <a href="" class="dropdown-item"><span class="fas fa-users"></span>Admin</a>
+                                </div>                                
+                                <div class="dp-border">
+                                    <a href="" class="dropdown-item"><span class="fas fa-object-ungroup"></span>Design Type</a>
+                                </div>
+                                <div class="dp-border">
+                                    <a href="" class="dropdown-item"><span class="fas fa-palette"></span>Color</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </header>
+        </div>
+        <!-- ------- NAVBAR END --------- -->        
+        <!-- ------- SIDEBAR START --------- -->
+        <div class="left-menu">
+            <div class="menubar-content">
+                <nav class="animated bouncInDown">
+                    <ul id="sidebar">
+                        <li class="active">
+                            <a href="#"><i class="fas fa-home"></i>Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-box-open"></i>Widgets</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-chart-bar"></i>UI Elements</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-opencart"></i>E-Commerce</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-uikit"></i>UI Elements</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-telegram-plane"></i>Advance Elements</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-envelope"></i>E-mail</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-calendar-alt"></i>Calendar</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-check-circle"></i>Todo List</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-book"></i>Docimentation</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="#"><i class="fas fa-cogs"></i>Setting
+                                <span class="fas fa-caret-down right"></span>
+                            </a>
+                            <ul id="sidebar">
+                                <li>
+                                    <a href="#">
+                                        <i class="fas fa-user-circle"></i>
+                                        Account
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fas fa-id-card"></i>
+                                        Profile
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fas fa-fingerprint"></i>
+                                        Security &amp; Privacy
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fas fa-key"></i>
+                                        Password
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fas fa-bell"></i>
+                                        Notification
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li >
+                            <a href="#"><i class="fas fa-sign-out-alt"></i>Logout</a>
+                        </li>
+                    
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- ------- SIDEBAR END --------- -->
+
+        <div class="content-wrapper">
+            <section class="dashboard-top-sec">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-8">
+                           <div class="bg-white top-chart-earn">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="last-month">
+                                        <h5>Dashboard</h5>
+                                        <p>Overview of Latest Month</p> 
+                                        <div class="earn">
+                                            <h2>$3367.98</h2>
+                                            <p>Current Month Sales</p>
+                                        </div>
+                                        <a href="" class="di-btn purple-gradient">Last Month Summary</a>
+                                </div>
+                            </div>
+                           </div> 
+                        </div>
+                        <div class="col-lg-4"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>    
+
+
+
+
+
+
+
+     <!-- JQUERY -->
+     <script src="./assets/js/jquery.min.js"></script>
+
+     <!-- JAVASCRIPT -->
+     <script src="./assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+
+     <!-- CUSTOME JAVASCRIPT -->
+     <script src="./assets/js/main.js"></script>
+</body>
+</html>
