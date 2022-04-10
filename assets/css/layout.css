@@ -249,3 +249,8 @@ ul#sidebar > li > a>i {
 .content-wrapper.hide {
     margin-left: 0;
 }
+.top-chart-earn {
+    border-radius: 5px;
+    padding-top: 15px;
+    box-shadow: -2px 3px 13px 0px #ddd6;
+}
