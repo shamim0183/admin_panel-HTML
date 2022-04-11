@@ -375,3 +375,85 @@ div#chart-2 {
 p.w-value {
     font-size: 16px;
 }
+.page-one-hybrid{
+    background: linear-gradient(121deg, rgb(92 26 195) 25%, rgb(136 25 206 / 95%) 100%);
+}
+.bounce-one-hybrid{
+    background: linear-gradient(121deg, rgb(26 179 195) 25%, rgb(25 97 206 / 95%) 100%);
+}
+.rv-status-one-hybrid{
+    background: linear-gradient(121deg, rgb(232 202 53) 25%, rgb(2206 125 25 / 95%) 100%);
+}
+/* <!-- ======== ADMIN SHOW AND ORDER STATUS TABLE =========== --> */
+p.admin-ac-title {
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0 5px;
+    display: inline-block;
+    border-bottom: 2px solid var(--main-color);
+    line-height: 1.5;
+    margin-bottom: 13px;
+}
+p.order-ac-title {
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0 5px;
+    display: inline-block;
+    border-bottom: 2px solid var(--main-color);
+    line-height: 1.5;
+    margin-bottom: 13px;
+}
+.admin-list {
+    padding: 10px;
+    border-radius: 5px;
+    background: var(--white-color);
+    box-shadow: -2px 3px 13px 0px #ddd6;
+}
+.order-list {
+    padding: 10px;
+    border-radius: 5px;
+    background: var(--white-color);
+    box-shadow: -2px 3px 13px 0px #ddd6;
+}
+.admin-image {
+    width: 50px;
+    border-radius: 50%;
+    height: 50px;
+}
+.admin-li {
+    display: flex;
+    align-items: center;
+    margin: 3px 0;
+    padding: 10px;
+}
+.admin-ac-details {
+    padding-left: 10px;
+    line-height: 1.4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+a.admin-name {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--second-color);
+    transition: .3s;
+}
+.admin-name:hover {
+   
+    color: var(--main-color);
+}
+
+p.activity-text {
+    font-size: 11px;
+    color: #989898;
+}
+.status {
+    text-align: left;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
