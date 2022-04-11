@@ -254,3 +254,124 @@ ul#sidebar > li > a>i {
     padding-top: 15px;
     box-shadow: -2px 3px 13px 0px #ddd6;
 }
+.last-month {
+    line-height: 20px;
+    text-align: center;
+}
+
+.last-month h5 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.last-month p {
+    font-size: 12px;
+    color: #777;
+}
+.earn{
+    margin: 12px 0;
+}
+.earn h2{
+    font-size: 26px;
+    font-weight: 600;
+}
+.chart-nav.active {
+    background-color: #fff !important;
+    color: var(--main-color) !important;
+    border-bottom: 2px solid var(--main-color);
+    border-radius: 0;
+}
+.chart-nav{
+    color: var(--second-color);
+    padding: 0 15px;
+    border-radius: 0;
+}
+.chart-nav:hover{
+    color: var(--main-color);
+}
+.chart-header-tab {
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+.bdr-cls{
+    
+    border-right: 1px solid #ddd;
+}
+.wre-sec {
+    overflow: hidden;
+    border-top: 1px solid #ddd;
+}
+
+.earn-view {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.earn-icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    padding: 3px;
+    /* background: #ddd; */
+    line-height: 20px;
+    color: var(--white-color);
+    font-size: 16px;
+}
+.wallet {
+    background: var(--main-color);
+}
+.referral {
+    background: #7d12ce;
+}
+.sales {
+    background: #0ea3d0;
+}
+.earning {
+    background: #fbbf15;
+}
+/* ========== TRAFFICE CHART ============== */
+.traffice-title {
+    text-align: left;
+    font-size: 17px;
+    font-weight: 500;
+    padding-left: 15px;
+}
+div#chart-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* =========== SMALL CHART ============== */
+.revinue-one-hybrid{
+    background: linear-gradient(121deg, rgba(194, 13, 90, 1) 25%, rgb(162 101 182) 100%);
+}
+.w-title {
+    display: flex;
+    padding: 0 7px 10px;
+    align-items: center;
+}
+.revinue {
+    overflow: hidden;
+    padding-top: 15px;
+    border-radius: 8px;
+}
+.w-icon {
+    font-size: 28px;
+    color: var(--white-color);
+    padding-right: var(--mb-2);
+}
+
+.sm-chart-text {
+    line-height: 20px;
+    color: var(--white-color);
+}
+
+p.w-value {
+    font-size: 16px;
+}
